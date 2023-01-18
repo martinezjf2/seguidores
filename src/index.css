@@ -35,20 +35,26 @@ code {
 
 #header-welcome {
  font-size: 60px;
+ color: white;
+ font-weight: bold;
+ letter-spacing: .4rem;
 }
 
 #header-group {
 font-size: 59px;
+color: white;
+letter-spacing: .3rem;
+
 }
 
 #header {
-  height: 500px;
-  background-color: pink;
-  /* height: auto; */
+  /* height: 500px; */
+  background-color: black;
+  height: auto;
 }
 
 #card-body {
-  width: 40%;
+  width: 50%;
   /* margin-top: 150px; */
   margin: 125px auto
 }
