@@ -1,4 +1,4 @@
-// import './App.css';
+// import "./App.css";
 import React from "react";
 import { navbar as links } from "./data.js";
 import NavbarComponent from "./Navbar.js";
