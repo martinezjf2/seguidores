@@ -1,8 +1,8 @@
 // import "./App.css";
 import React from "react";
 import { navbar as links } from "./data.js";
-import NavbarComponent from "./Navbar.js";
-import Header from "./Header.js";
+import NavbarComponent from "./components/Navbar.js";
+import Header from "./components/Header.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
