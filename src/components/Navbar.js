@@ -5,16 +5,17 @@ import { NavLink } from "react-router-dom";
 export default function NavbarComponent({ links, page, setPage }) {
   // function handleClick(e) {
   //   e.preventDefault();
+  //   setPage(e.target.innerText.toLowerCase().split(" ").join(""));
   // }
   const allLinks = links.map((link, index) => (
-    <Nav.Item
-      as="li"
-      key={link}
-      // value={page} onClick={handleClick}
-    >
-      <NavLink href={`/${link.toLowerCase().split(" ").join("")}`}>
+    <Nav.Item as="li" key={link}>
+      <Nav.Link
+        href={`/${link.toLowerCase().split(" ").join("")}`}
+        // value={page}
+        // onClick={handleClick}
+      >
         {link}
-      </NavLink>
+      </Nav.Link>
     </Nav.Item>
   ));
   return (

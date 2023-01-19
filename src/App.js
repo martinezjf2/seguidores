@@ -12,6 +12,7 @@ import Videos from "./components/Videos";
 
 function App() {
   const [page, setPage] = useState("/home");
+  console.log(page);
 
   return (
     <div className="App">
