@@ -9,7 +9,7 @@ export default function OurMission() {
         <img
           id="brand-logo"
           src={logo}
-          width="500rem"
+          width="600rem"
           height="500rem"
           alt="Seguidores de Jesus"
         />

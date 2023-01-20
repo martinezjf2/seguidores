@@ -17,3 +17,5 @@ export default function Videos({ videos }) {
     </div>
   );
 }
+
+// Add the slicing method here to display only 6 videos within the videos-section container

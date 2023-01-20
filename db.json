@@ -100,5 +100,16 @@
         "phrase": "",
         "verse": ""
       }
+     ],
+     "announcements": [
+      {
+        "id": 1,
+        "date": "",
+        "event": "",
+        "location": "",
+        "time": "",
+        "description": ""
+        
+      }
      ]
   }
