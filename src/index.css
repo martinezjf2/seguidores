@@ -204,3 +204,12 @@ padding-top: 25px;
   width: 500rem;
   height: 500rem;
 } */
+
+
+/* Links Active */
+
+.selected {
+  color: blue;
+}
+
+/* Do the same thing as the categories lab with a ternary expression. If the category is seleted, then add the classname to be selected, else empty string */

@@ -29,6 +29,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/ourmission" element={<OurMission />} />
         <Route path="/videos" element={<Videos videos={videos} />} />
+        <Route exact path="/" element={<Header />} />
       </Routes>
     </div>
   );

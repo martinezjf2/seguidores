@@ -42,5 +42,63 @@
         "description": "",
         "date": "July 17, 2022"
       }
-    ]
+    ],
+     "members": [
+      {
+        "id": 1,
+        "img_link": "",
+        "name": "Jeffrey Martinez",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 2,
+        "img_link": "",
+        "name": "Marlenis Hernandez",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 3,
+        "img_link": "",
+        "name": "Jorge Valenzuela",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 4,
+        "img_link": "",
+        "name": "Fermina Martinez",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 5,
+        "img_link": "",
+        "name": "Elmer (Chalillito) Martinez",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 6,
+        "img_link": "",
+        "name": "Johnathan Martinez",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 7,
+        "img_link": "",
+        "name": "Reina Martinez",
+        "phrase": "",
+        "verse": ""
+      },
+      {
+        "id": 8,
+        "img_link": "",
+        "name": "Joseph Martinez",
+        "phrase": "",
+        "verse": ""
+      }
+     ]
   }
