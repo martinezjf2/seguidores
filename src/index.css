@@ -5,16 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+
+
 #navbar {
   padding: 20px;
   background-color: rgb(13, 110, 253);
+  width: 100%;
 }
 
 #navbar a {
@@ -23,7 +29,11 @@ code {
   color: white;
   padding: 5px 35px;
   letter-spacing: .2rem;
+  text-decoration: none;
+  
 }
+
+
 
 #navbar a:hover {
   color: blue
@@ -46,6 +56,10 @@ code {
  /* z-index: ; */
 /* position: absolute; */
 
+}
+
+#navbar #brand-logo {
+  color: white;
 }
 
 #header-group {
@@ -82,6 +96,7 @@ padding-top: 25px;
   margin-top: 90px;
   left: 50rem;
   margin-top: 20px;
+
 }
 
 #second-image {
@@ -109,7 +124,7 @@ padding-top: 25px;
   z-index: 4;
   margin-top: 14rem;
   left: 31%;
-  border-radius: 25%
+  border-radius: 10%
 }
 
 #fifth-image {
@@ -127,6 +142,65 @@ padding-top: 25px;
   z-index: 5;
   margin-top: 24rem;
   right: 28%;
-  border-radius: 25%
 }
 
+/* Individual Video component */
+
+#video iframe{
+  width: 100%;
+  height: 290px;
+  /* border-radius: 5%; */
+
+}
+
+#video {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px 5px;
+}
+
+#video h3 {
+  text-align: center;
+}
+
+#video figcaption {
+  text-align: right;
+}
+
+#videos-heading {
+  text-align:center;
+  padding: 25px 10px 10px;
+  letter-spacing: .05rem;
+  font-weight: bold;
+}
+
+#videos-section {
+  padding: 1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
+}
+
+#videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Our Mission */
+
+#img-div {
+  background-color:white;
+  /* margin: 0 auto; */
+  width: auto
+}
+
+#mission {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* #img-div img {
+  width: 500rem;
+  height: 500rem;
+} */

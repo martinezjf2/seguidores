@@ -1,5 +1,5 @@
 // import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { navbar as links } from "./data.js";
 import { Routes, Route } from "react-router-dom";
 import NavbarComponent from "./components/Navbar.js";
@@ -12,20 +12,24 @@ import Videos from "./components/Videos";
 
 function App() {
   const [page, setPage] = useState("/home");
-  console.log(page);
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/videos")
+      .then((data) => data.json())
+      .then((json) => setVideos(json));
+  }, []);
 
   return (
     <div className="App">
       <NavbarComponent links={links} page={page} setPage={setPage} />
-      <header className="App-header">
-        <Routes>
-          <Route path="/home" element={<Header />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/ourmission" element={<OurMission />} />
-          <Route path="/videos" element={<Videos />} />
-        </Routes>
-      </header>
+      <Routes>
+        <Route path="/home" element={<Header />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/ourmission" element={<OurMission />} />
+        <Route path="/videos" element={<Videos videos={videos} />} />
+      </Routes>
     </div>
   );
 }
