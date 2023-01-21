@@ -255,3 +255,19 @@ padding-top: 25px;
 }
 
 
+#carousel {
+  background-color: black;
+  padding: 10px 10rem 20px;
+
+  
+}
+
+#ind-img-carousel {
+  width: 88%;
+  margin: 0 auto;
+  padding: 20px 10px 50px;
+}
+
+#img-center {
+  text-align: center;
+}

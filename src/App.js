@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { navbar as links } from "./data.js";
 import { Routes, Route } from "react-router-dom";
 import NavbarComponent from "./components/Navbar.js";
-import Header from "./components/Header.js";
+import Home from "./containers/Home.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
@@ -38,7 +38,7 @@ function App() {
         setSelectedLink={setSelectedLink}
       />
       <Routes>
-        <Route path="/home" element={<Header />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/ourmission" element={<OurMission />} />
@@ -47,7 +47,7 @@ function App() {
           path="/announcements"
           element={<Announcements announcements={announcements} />}
         />
-        <Route exact path="/" element={<Header />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
       <Footer />
     </div>
