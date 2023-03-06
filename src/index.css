@@ -1,19 +1,17 @@
-body, html {
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
+  -moz-osx-font-smoothing: grayscale;
 }
-
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
 
 #navbar {
   padding: 20px;
@@ -26,15 +24,12 @@ code {
   font-weight: bold;
   color: white;
   padding: 5px 35px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-decoration: none;
-  
 }
 
-
-
 #navbar a:hover {
-  color: blue
+  color: blue;
 }
 
 #text-center {
@@ -42,18 +37,16 @@ code {
 }
 
 #header-welcome {
- font-size: 40px;
- color: white;
- font-weight: bold;
- letter-spacing: .4rem;
- text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
- 
- 
- /* transition-property: opacity, left, top, height; */
-  /* transition-duration: 3s, 5s; */
- /* z-index: ; */
-/* position: absolute; */
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
 
+  /* transition-property: opacity, left, top, height; */
+  /* transition-duration: 3s, 5s; */
+  /* z-index: ; */
+  /* position: absolute; */
 }
 
 #navbar #brand-logo {
@@ -61,18 +54,23 @@ code {
 }
 
 #header-group {
-font-size: 79px;
-color: white;
-letter-spacing: .3rem;
-z-index: 0;
-font-weight: bold;
-text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+  font-size: 79px;
+  color: white;
+  letter-spacing: 0.3rem;
+  z-index: 0;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff0000, 0 0 10px #0000ff;
 }
 
 #header {
   height: 740px;
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(19,0,255,1) 100%);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(19, 0, 255, 1) 100%
+  );
   border-radius: 0%;
 }
 
@@ -80,10 +78,9 @@ text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
   width: 50%;
   /* margin-top: 150px; */
   margin: 125px auto;
- z-index: 5 ;
-position: relative;
-padding-top: 25px;
-
+  z-index: 5;
+  position: relative;
+  padding-top: 25px;
 }
 
 /* Images */
@@ -95,7 +92,6 @@ padding-top: 25px;
   margin-top: 90px;
   right: 10%;
   margin-top: 20px;
-
 }
 
 #second-image {
@@ -105,7 +101,6 @@ padding-top: 25px;
   margin-top: 20px;
   left: 11%;
   border-radius: 25%;
-  
 }
 
 #third-image {
@@ -114,7 +109,7 @@ padding-top: 25px;
   z-index: 3;
   margin-top: 20px;
   left: 22%;
-  border-radius: 25%
+  border-radius: 25%;
 }
 
 #fourth-image {
@@ -123,7 +118,7 @@ padding-top: 25px;
   z-index: 4;
   margin-top: 14rem;
   left: 31%;
-  border-radius: 10%
+  border-radius: 10%;
 }
 
 #fifth-image {
@@ -132,24 +127,23 @@ padding-top: 25px;
   z-index: 2;
   margin-top: 5rem;
   left: 32%;
-  border-radius: 25%
+  border-radius: 25%;
 }
 
 #sixth-image {
   width: 14rem;
   position: absolute;
   z-index: 5;
-  margin-top: 24rem;
+  margin-top: 23.6rem;
   right: 28%;
 }
 
 /* Individual Video component */
 
-#video iframe{
+#video iframe {
   width: 100%;
   height: 290px;
   /* border-radius: 5%; */
-
 }
 
 #video {
@@ -167,9 +161,9 @@ padding-top: 25px;
 }
 
 #videos-heading {
-  text-align:center;
+  text-align: center;
   padding: 25px 10px 10px;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   font-weight: bold;
 }
 
@@ -177,7 +171,6 @@ padding-top: 25px;
   padding: 1.5rem;
   margin-left: 10rem;
   margin-right: 10rem;
-  
 }
 
 #videos {
@@ -188,9 +181,9 @@ padding-top: 25px;
 /* Our Mission Component */
 
 #img-div {
-  background-color:white;
+  background-color: white;
   /* margin: 0 auto; */
-  width: auto
+  width: auto;
 }
 
 #mission {
@@ -204,7 +197,6 @@ padding-top: 25px;
   height: 500rem;
 } */
 
-
 /* Navbar Component if link is selected */
 
 .selected {
@@ -213,10 +205,9 @@ padding-top: 25px;
 
 /* Do the same thing as the categories lab with a ternary expression. If the category is seleted, then add the classname to be selected, else empty string */
 
-
 /* Footer Section */
 
-#footer-section .card{
+#footer-section .card {
   padding: 8px 20px;
   background-color: rgb(13, 110, 253);
   width: 25%;
@@ -237,29 +228,24 @@ padding-top: 25px;
   text-decoration: none;
   display: block;
   font-size: 25px;
-  font-weight:bold;
-  letter-spacing: .08rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
   /* width: 70%; */
   /* margin: 0 auto; */
-  
 }
 
 #footer-section a:hover {
   color: blue;
 }
 
-
 #footer-logo {
   color: white;
   padding: 0;
 }
 
-
 #carousel {
   background-color: black;
   padding: 10px 10rem 20px;
-
-  
 }
 
 #ind-img-carousel {

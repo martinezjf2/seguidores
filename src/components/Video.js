@@ -8,7 +8,7 @@ export default function Video({ video }) {
   return (
     <div id="video">
       <h3>{name}</h3>
-      <iframe src={link} allowFullScreen />
+      <iframe src={link} allowFullScreen title={name} />
       <figcaption>{date}</figcaption>
     </div>
   );

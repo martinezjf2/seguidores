@@ -15,20 +15,13 @@ import Footer from "./components/Footer.js";
 function App() {
   const [selectedLink, setSelectedLink] = useState("home");
   const [videos, setVideos] = useState([]);
-  const [announcements, setAnnouncements] = useState([]);
+
 
   useEffect(() => {
     fetch("http://localhost:3000/videos")
       .then((data) => data.json())
       .then((json) => setVideos(json));
   }, []);
-
-  // For Fetching Announcements from the db.json
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/announcements")
-  //     .then((data) => data.json())
-  //     .then((json) => setAnnouncements(json));
-  // }, []);
 
   return (
     <div className="App">
@@ -45,7 +38,7 @@ function App() {
         <Route path="/videos" element={<Videos videos={videos} />} />
         <Route
           path="/announcements"
-          element={<Announcements announcements={announcements} />}
+          element={<Announcements />}
         />
         <Route exact path="/" element={<Home />} />
       </Routes>

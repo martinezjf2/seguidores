@@ -1,13 +1,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import logo from "../logo-transparent-png.png";
+import logo from "../images/logo-transparent-png.png";
 
 export default function Footer() {
   return (
     <footer id="footer-section">
       <Card style={{ width: "25%", float: "left", border: "none" }}>
         <Card.Body id="footer-logo">
-          <img src={logo} width="180px" />
+          <img src={logo} width="180px" alt={logo} />
         </Card.Body>
       </Card>
       <Card style={{ width: "25%", float: "left", border: "none" }}>

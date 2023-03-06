@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo-transparent-png.png";
+import logo from "../images/logo-transparent-png.png";
 
 export default function OurMission() {
   return (

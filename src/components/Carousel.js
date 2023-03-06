@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import assamblea from "../assamblea.png";
-import churchMural from "../church-mural.png";
-import church from "../church.png";
-import grupo2 from "../grupo2.png";
+import assamblea from "../images/assamblea.png";
+import churchMural from "../images/church-mural.png";
+import church from "../images/church.png";
+import grupo2 from "../images/grupo2.png";
 
 export default function CarouselContainer() {
   return (
