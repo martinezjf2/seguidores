@@ -8,3 +8,7 @@ export default function DailyWord() {
     </div>
   );
 }
+
+// Create an array of daily verses, that will be
+// select a random verse every day from that array
+// make sure that the verse persists for that day

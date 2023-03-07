@@ -11,11 +11,11 @@ import OurMission from "./components/OurMission";
 import Videos from "./components/Videos";
 import Announcements from "./components/Announcements.js";
 import Footer from "./components/Footer.js";
+import Calendar from "./components/Calendar.js";
 
 function App() {
   const [selectedLink, setSelectedLink] = useState("home");
   const [videos, setVideos] = useState([]);
-
 
   useEffect(() => {
     fetch("http://localhost:3000/videos")
@@ -32,14 +32,12 @@ function App() {
       />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/ourmission" element={<OurMission />} />
+        {/* <Route path="/aboutus" element={<AboutUs />} /> */}
+        {/* <Route path="/contactus" element={<ContactUs />} /> */}
+        <Route path="/mission" element={<OurMission />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/videos" element={<Videos videos={videos} />} />
-        <Route
-          path="/announcements"
-          element={<Announcements />}
-        />
+        <Route path="/announcements" element={<Announcements />} />
         <Route exact path="/" element={<Home />} />
       </Routes>
       <Footer />
