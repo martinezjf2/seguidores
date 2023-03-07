@@ -17,8 +17,7 @@ export default function Calendar() {
         title="stkilianEvents"
         src="https://calendar.google.com/calendar/embed?src=4236f76ede532a28fd8ca6e5900cbab64a47b82f80b03737ac0a6641569e6b16%40group.calendar.google.com&ctz=America%2FNew_York"
         frameborder="0"
-        scrolling="no"
-      ></iframe>
+      />
     </div>
   );
 }
