@@ -1,4 +1,4 @@
-web: node db.json
+web: json-server db.json
 web: bin/boot
 
 
