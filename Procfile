@@ -1,3 +1,3 @@
-json-server db.json
-npm start
+web: node db.json
+
 
