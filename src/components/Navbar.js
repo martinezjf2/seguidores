@@ -2,13 +2,16 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import  {Link} from "react-router-dom";
 
 export default function NavbarComponent({ links, page, setPage }) {
   const allLinks = links.map((link, index) => (
     <Nav.Item as="li" key={link}>
-      <Nav.Link href={`/${link.toLowerCase().split(" ").join("")}`}>
+      {/* <Nav.Link href={`/${link.toLowerCase().split(" ").join("")}`}>
         {link}
-      </Nav.Link>
+      </Nav.Link> */}
+
+      <Link to={`/${link.toLowerCase().split(" ").join("")}`}>{link}</Link>
     </Nav.Item>
   ));
   return (
@@ -20,7 +23,7 @@ export default function NavbarComponent({ links, page, setPage }) {
         as="ul"
       >
         <Navbar.Brand href="/home">
-          <Nav.Link className="text-white">Seguidores de Jesus</Nav.Link>
+          <Link to="/" className="text-white">Seguidores de Jesus</Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
