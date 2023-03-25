@@ -18,7 +18,7 @@ function App() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/videos")
+    fetch("http://localhost:8000/videos")
       .then((data) => data.json())
       .then((json) => setVideos(json));
   }, []);
