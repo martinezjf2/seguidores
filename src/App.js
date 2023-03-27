@@ -1,6 +1,7 @@
 // import "./App.css";
 import React, { useState, useEffect } from "react";
 import { navbar as links } from "./data.js";
+import { videos as indVideos } from "./data.js";
 import { Routes, Route } from "react-router-dom";
 import NavbarComponent from "./components/Navbar.js";
 import Home from "./containers/Home.js";
@@ -15,13 +16,9 @@ import Calendar from "./components/Calendar.js";
 
 function App() {
   const [selectedLink, setSelectedLink] = useState("home");
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState(indVideos);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/videos")
-      .then((data) => data.json())
-      .then((json) => setVideos(json));
-  }, []);
+  
 
   return (
     <div className="App">
